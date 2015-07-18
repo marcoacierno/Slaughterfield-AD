@@ -15,6 +15,8 @@ You can play any mode:
 - Fallout
 - Last bullet
 
-There is a ESL mode and a voting system
+There is a ESL mode and a voting system.
+
+The final TextDraw of every round will let you see the results of the previous rounds.
 
 The last comment "And this is the end of the best existing A/D GM. Stay hungry, stay foolish!" has been aded by Miki after he translated the entire gamemode to English. Thank you <3
