@@ -4,7 +4,7 @@ Slaughterfield A/D gamemode. Created for the s7 clan (sigmaseven.forumfree.it) b
 
 I decided to share it to don't let it die in a folder and because I loved create it :) It's not the best example of "good" "clean" "efficient" code but aannnyywway
 
-You can play any mode:
+You can play modes:
 
 - A/D (Everything or Interiors only)
 - Area
