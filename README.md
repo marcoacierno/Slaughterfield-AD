@@ -19,7 +19,7 @@ Some features:
 
 - ESL mode
 - Voting system
-- Editor for bases/arene/etc.
+- Editor for bases/arene/etc. (create new or edit existing)
 - End round textdraw that allows you to see the textdraw of previous rounds
 - TCW/CW support
 - Upload of matches online
