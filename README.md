@@ -22,7 +22,7 @@ Some features:
 - Editor for bases/arene/etc.
 - End round textdraw that allows you to see the textdraw of previous rounds
 - TCW/CW support
-- Upload of matchs online
+- Upload of matches online
 
 There is a ESL mode and a voting system.
 
