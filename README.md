@@ -24,7 +24,7 @@ Some features:
 - TCW/CW support
 - Upload of matches online
 - Bases pack concept (So in ESL mode you can use ESL basepack and in other modes the normal basepack)
-- Auto round in Fun mode so admins or votation needed. Everything is automatic.
+- Auto round in Fun mode so no admins or votation needed. Everything is automatic.
 
 There is a ESL mode and a voting system.
 
