@@ -11,7 +11,7 @@ You can play any mode:
 - TDM
 - Player vs Player
 - Gungame
-- Fight "All vs All" or "One Vs One"
+- Fight "All vs All" or "One Vs One (similar to GTA:T mode)"
 - Fallout
 - Last bullet
 
