@@ -4,4 +4,15 @@ Slaughterfield A/D gamemode. Created for the s7 clan (sigmaseven.forumfree.it) b
 
 I decided to share it to don't let it die in a folder and because I loved create it :) It's not the best example of "good" "clean" "efficient" code but aannnyywway
 
+You can play any mode:
+
+- A/D
+- Area
+- TDM
+- Player vs Player
+- Gungame
+- Fight "All vs All" or "One Vs One"
+- Fallout
+- Last bullet
+
 The last comment "And this is the end of the best existing A/D GM. Stay hungry, stay foolish!" has been aded by Miki after he translated the entire gamemode to English. Thank you <3
