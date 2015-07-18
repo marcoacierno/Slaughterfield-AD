@@ -6,7 +6,7 @@ I decided to share it to don't let it die in a folder and because I loved create
 
 You can play any mode:
 
-- A/D
+- A/D (Everything or Interiors only)
 - Area
 - TDM
 - Player vs Player
