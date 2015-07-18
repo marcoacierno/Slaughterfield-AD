@@ -28,5 +28,6 @@ Some features:
 - Customize your player by adding objects (Yes, you can save them and you will get them back your next login)
 - Beta login based on Hardware ID
 - Most commands merge things together (like, /add [all|ball|id] instead of three different commands) and provide fast way to access them, like /aa or /ab
+- etc.
 
 The last comment "And this is the end of the best existing A/D GM. Stay hungry, stay foolish!" has been aded by Miki after he translated the entire gamemode to English. Thank you <3
