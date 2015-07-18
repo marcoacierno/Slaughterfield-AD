@@ -29,9 +29,4 @@ Some features:
 - Beta login based on Hardware ID
 - Most commands merge things together (like, /add [all|ball|id] instead of three different commands) and provide fast way to access them, like /aa or /ab
 
-There is a ESL mode and a voting system.
-
-The final TextDraw of every round will let you see the results of the previous rounds.
-
-
 The last comment "And this is the end of the best existing A/D GM. Stay hungry, stay foolish!" has been aded by Miki after he translated the entire gamemode to English. Thank you <3
