@@ -25,6 +25,7 @@ Some features:
 - Upload of matches online
 - Bases pack concept (So in ESL mode you can use ESL basepack and in other modes the normal basepack)
 - Auto round in Fun mode so no admins or votation needed. Everything is automatic.
+- Customize your player by adding objects (Yes, you can save them and you will get them back your next login)
 
 There is a ESL mode and a voting system.
 
