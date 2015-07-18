@@ -11,7 +11,7 @@ You can play any mode:
 - TDM
 - Player vs Player
 - Gungame
-- Fight "All vs All" or "One Vs One (similar to GTA:T mode)"
+- Fight "All vs All" or "One Vs One"
 - Fallout
 - Last bullet
 
@@ -23,6 +23,7 @@ Some features:
 - End round textdraw that allows you to see the textdraw of previous rounds
 - TCW/CW support
 - Upload of matches online
+- Bases pack concept (So in ESL mode you can use ESL basepack and in other modes the normal basepack)
 
 There is a ESL mode and a voting system.
 
