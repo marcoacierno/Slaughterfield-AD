@@ -1,0 +1,10 @@
+crashinfo.txt
+server_log.txt
+server.cfg
+pawno/
+samp-server.exe
+samp-npc.exe
+announce.exe
+plugins/
+scriptfiles/
+libmysql.dll

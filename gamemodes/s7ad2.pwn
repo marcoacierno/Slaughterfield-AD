@@ -994,7 +994,7 @@ new const aVehicleNames[212][] = {	// Vehicle Names - Betamaster
 
 //#include                            <	mailer				>
 #include 							<	zcmd				>
-#include 							<	geo					>
+#include 							<	geolocation			>
 
 #define STRLIB_RETURN_SIZE          256// mysql querys
 
