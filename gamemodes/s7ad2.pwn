@@ -5883,6 +5883,11 @@ public OnGameModeInit()
 
 //    mysql_debug(ENABLE_DEBUGGING);
 	INI_ParseFile("slfd_mysql.ini", "parseMySQLData", .bPassTag = true);
+	
+	if (MySQLData[mysql_Password][0] == '\0') {
+		print("no password");
+        strcpy_2(MySQLData[mysql_Password], "");
+	}
 
 	printf("Connection to: host = %s user = %s db = %s", MySQLData[mysql_Host], MySQLData[mysql_User], MySQLData[mysql_Database]);
 
@@ -5893,6 +5898,7 @@ public OnGameModeInit()
 									  .autoreconnect = true);
 
 	print(".. I'm connected! Wow!");
+	printf("g_MySQLConnection == %d", g_MySQLConnection);
 
     MySQLStatus[TotalQuerys] ++;
     mysql_tquery(g_MySQLConnection, sprintf("SELECT * FROM config WHERE gid = %d", G_ID), "OnConfigLoaded", "i", -1);
