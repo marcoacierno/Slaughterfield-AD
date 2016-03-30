@@ -8,3 +8,4 @@ announce.exe
 plugins/
 scriptfiles/
 libmysql.dll
+mysql_log.txt
