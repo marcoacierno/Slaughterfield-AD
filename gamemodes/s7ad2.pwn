@@ -5830,44 +5830,46 @@ public OnGameModeInit()
     antiDeAMX();
     StartTick = gettime();
 
-	new bind [24];
-	GetServerVarAsString ("bind", bind, 24);
+    G_ID = GAMEMODE_SERVER_1;
 
-	if (strlen (bind) < 1)
-	{
-		print ("Unable to set a valid G_ID.");
-	    SendRconCommand ("exit");
-	    return true;
-	}
-	else
-	{
-		new
-		    port = GetServerVarAsInt ("port");
-		/*
-		if (!strcmp(bind, "91.121.154.28", true) && port == 7777)
-		{
-			G_ID = GAMEMODE_SECONDSERVER;
-			198.20.110.133:7782
-		}*/
-	 	if (!strcmp(bind, "198.20.110.133", true) && port == 7782)
-		{
-			G_ID = GAMEMODE_SERVER_1;
-		}
-		else if (!strcmp(bind, "5.175.191.48", true) && port == 1237)
-		{
-			G_ID = GAMEMODE_SERVER_2; // # Deve essere test server
-		}
-		else if (!strcmp(bind, "127.0.0.1", true) && port == 7777)
-		{
-		    G_ID = GAMEMODE_SERVER_2;
-		}
-		else
-		{
-			print ("Unable to set a valid G_ID.");
-		    SendRconCommand ("exit");
-		    return true;
-		}
-	}
+	// new bind [24];
+	// GetServerVarAsString ("bind", bind, 24);
+
+	// if (strlen (bind) < 1)
+	// {
+	// 	print ("Unable to set a valid G_ID.");
+	//     SendRconCommand ("exit");
+	//     return true;
+	// }
+	// else
+	// {
+	// 	new
+	// 	    port = GetServerVarAsInt ("port");
+	// 	/*
+	// 	if (!strcmp(bind, "91.121.154.28", true) && port == 7777)
+	// 	{
+	// 		G_ID = GAMEMODE_SECONDSERVER;
+	// 		198.20.110.133:7782
+	// 	}*/
+	//  	if (!strcmp(bind, "198.20.110.133", true) && port == 7782)
+	// 	{
+	// 		G_ID = GAMEMODE_SERVER_1;
+	// 	}
+	// 	else if (!strcmp(bind, "5.175.191.48", true) && port == 1237)
+	// 	{
+	// 		G_ID = GAMEMODE_SERVER_2; // # Deve essere test server
+	// 	}
+	// 	else if (!strcmp(bind, "127.0.0.1", true) && port == 7777)
+	// 	{
+	// 	    G_ID = GAMEMODE_SERVER_2;
+	// 	}
+	// 	else
+	// 	{
+	// 		print ("Unable to set a valid G_ID.");
+	// 	    SendRconCommand ("exit");
+	// 	    return true;
+	// 	}
+	// }
 
 	printf (">> Gamemode is ready with G_ID: %d", G_ID);
 
