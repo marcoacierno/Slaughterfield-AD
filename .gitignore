@@ -2,11 +2,14 @@ crashinfo.txt
 server_log.txt
 server.cfg
 pawno/
-samp-server.exe
-samp-npc.exe
-announce.exe
 plugins/
 scriptfiles/
 libmysql.dll
 mysql_log.txt
 .DS_Store
+samp03svr
+samp-npc
+announce
+samp-server.exe
+samp-npc.exe
+announce.exe
