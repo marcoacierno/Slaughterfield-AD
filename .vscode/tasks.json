@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "bash -c \"DYLD_LIBRARY_PATH=${workspaceRoot}/pawn/lib/ ${workspaceRoot}/pawn/bin/pawncc ${file} -i'${workspaceRoot}/include/' -Z -\\; -\\(\"",
+      "isBackground": false,
+      "problemMatcher": "$pawncc",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "cwd": "${workspaceRoot}/gamemodes/"
+      }
+    }
+  ]
+}
