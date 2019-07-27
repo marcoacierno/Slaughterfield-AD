@@ -26229,7 +26229,7 @@ stock StartRound(id, gametype = GAMETYPE_BASE, playerid = INVALID_PLAYER_ID, xra
 
         PlayerPlaySound(i, 1187, 0.0, 0.0, 0.0);
 
-        TogglePlayerControllable(playerid, false);
+        // TogglePlayerControllable(playerid, false);
 
         SetPlayerInterior(i, eScenario[Interior]);
 
