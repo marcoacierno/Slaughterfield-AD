@@ -5812,7 +5812,7 @@ public parseMySQLData(tag[], name[], value[])
 	} else if (!strcmp(name, "db")) {
         strcpy_2(MySQLData[mysql_Database], value);
 	}
-	
+
 	return true;
 }
 
@@ -5885,7 +5885,7 @@ public OnGameModeInit()
 
 //    mysql_debug(ENABLE_DEBUGGING);
 	INI_ParseFile("slfd_mysql.ini", "parseMySQLData", .bPassTag = true);
-	
+
 	if (MySQLData[mysql_Password][0] == '\0') {
 		print("no password");
         strcpy_2(MySQLData[mysql_Password], "");
@@ -6021,7 +6021,7 @@ public OnGameModeInit()
 	iTeam[TEAM_REF][tLocked] 	= false;
 	iTeam[TEAM_A_SUB][tLocked] 	= false;
 	iTeam[TEAM_B_SUB][tLocked] 	= false;
-	
+
 	if (fexist("slfd_objects.txt"))
 	{
 	    print("File slfd_objects.txt ok.");
@@ -9915,7 +9915,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 		else
 		{
 		    if (Gaming != GAMETYPE_GUNGAME && Gaming != GAMETYPE_FIGHT && Gaming != GAMETYPE_LASTBULLET) SetPlayerColor( playerid , iTeam[ pT ][ OutColor ] );
-		    SendDeathMessage(INVALID_PLAYER_ID, playerid, reason);// 
+		    SendDeathMessage(INVALID_PLAYER_ID, playerid, reason);//
 
             if (Gaming != GAMETYPE_GUNGAME && Gaming != GAMETYPE_FIGHT && Gaming != GAMETYPE_LASTBULLET) // modalit� team
             {
@@ -15682,7 +15682,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 							format(stringo, sizeof stringo, "{"#COLOR_SYSTEM_FOCUS"}%s{"#COLOR_SYSTEM_REST"} has entered /dm {"#COLOR_SYSTEM_FOCUS"}%d", Player[playerid][Nickname], id + 1);
 							SendClientMessageToAll(COLOR_SYSTEM, stringo);
 							SetPlayerVirtualWorld(playerid, Player_DmTry[ playerid ] + 1);*/
-							
+
 							PutPlayerInDm (playerid, id);
 
 						    SendClientMessage(playerid, COLOR_SYSTEM, "This deathmatch is no longer locked.");
@@ -15741,7 +15741,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					}
 				}
 			}
-			
+
 			PutPlayerInDm (playerid, dm);
 /*
 			Player[playerid][InDm] 		= dm;
@@ -27259,7 +27259,7 @@ stock EndRound(winner = NULL_TEAM, wintype = WINTYPE_ELIMINAZIONE)
 			top[0][E_BINTREE_INPUT_POINTER] = INVALID_PLAYER_ID;
 			top[0][E_BINTREE_INPUT_VALUE] = 0;
 		}
-		
+
 		if ((j-2)>=0){
 			top[1][E_BINTREE_INPUT_POINTER] = la[j-2][E_BINTREE_INPUT_POINTER];
 			top[1][E_BINTREE_INPUT_VALUE] = la[j-2][E_BINTREE_INPUT_VALUE];
@@ -27290,7 +27290,7 @@ stock EndRound(winner = NULL_TEAM, wintype = WINTYPE_ELIMINAZIONE)
 			top[3][E_BINTREE_INPUT_POINTER] = INVALID_PLAYER_ID;
 			top[3][E_BINTREE_INPUT_VALUE] = 0;
 		}
-		
+
 		if ((j2-2)>=0)
 		{
 			top[4][E_BINTREE_INPUT_POINTER] = lb[j2-2][E_BINTREE_INPUT_POINTER];
@@ -27334,7 +27334,7 @@ stock EndRound(winner = NULL_TEAM, wintype = WINTYPE_ELIMINAZIONE)
 			top[5][E_BINTREE_INPUT_POINTER], top[5][E_BINTREE_INPUT_VALUE],
 			mScorer1, mScore1);
 		SendClientMessageToAll(-1, stringo);
-		
+
 		mScorer2 = top[4][E_BINTREE_INPUT_POINTER];
 		mScore2 = top[4][E_BINTREE_INPUT_VALUE];
 
@@ -27351,7 +27351,7 @@ stock EndRound(winner = NULL_TEAM, wintype = WINTYPE_ELIMINAZIONE)
 			mScorer3, mScore3);
 		SendClientMessageToAll(-1, stringo);
 		*/
-		
+
 		new top[3*2][E_BINTREE_INPUT];
 
 		top[0][E_BINTREE_INPUT_POINTER] = la[j-1][E_BINTREE_INPUT_POINTER];
@@ -27406,7 +27406,7 @@ stock EndRound(winner = NULL_TEAM, wintype = WINTYPE_ELIMINAZIONE)
 		}
 
 		Bintree_Sort(top, 6);
-		
+
 		mScorer1 = top[5][E_BINTREE_INPUT_POINTER];
 		mScore1 = top[5][E_BINTREE_INPUT_VALUE];
 
@@ -29303,7 +29303,7 @@ stock Process_FineCW()
 		top[0][E_BINTREE_INPUT_POINTER] = INVALID_PLAYER_ID;
 		top[0][E_BINTREE_INPUT_VALUE] = 0;
 	}
-	
+
 	if ((j-2)>=0)
 	{
 		top[1][E_BINTREE_INPUT_POINTER] = la[j-2][E_BINTREE_INPUT_POINTER];
@@ -29314,7 +29314,7 @@ stock Process_FineCW()
 		top[1][E_BINTREE_INPUT_POINTER] = INVALID_PLAYER_ID;
 		top[1][E_BINTREE_INPUT_VALUE] = 0;
 	}
-	
+
 	if ((j-3)>=0)
 	{
 		top[2][E_BINTREE_INPUT_POINTER] = la[j-3][E_BINTREE_INPUT_POINTER];
@@ -29325,7 +29325,7 @@ stock Process_FineCW()
 		top[2][E_BINTREE_INPUT_POINTER] = INVALID_PLAYER_ID;
 		top[2][E_BINTREE_INPUT_VALUE] = 0;
 	}
-	
+
 	if((j2-1)>=0)
 	{
 		top[3][E_BINTREE_INPUT_POINTER] = lb[j2-1][E_BINTREE_INPUT_POINTER];
@@ -29336,7 +29336,7 @@ stock Process_FineCW()
 		top[3][E_BINTREE_INPUT_POINTER] = INVALID_PLAYER_ID;
 		top[3][E_BINTREE_INPUT_VALUE] = 0;
 	}
-	
+
 	if ((j2-2)>=0)
 	{
 		top[4][E_BINTREE_INPUT_POINTER] = lb[j2-2][E_BINTREE_INPUT_POINTER];
@@ -29347,7 +29347,7 @@ stock Process_FineCW()
 		top[4][E_BINTREE_INPUT_POINTER] = INVALID_PLAYER_ID;
 		top[4][E_BINTREE_INPUT_VALUE] = 0;
 	}
-	
+
 	if((j2-3)>=0)
 	{
 		top[5][E_BINTREE_INPUT_POINTER] = lb[j2-3][E_BINTREE_INPUT_POINTER];
@@ -29358,7 +29358,7 @@ stock Process_FineCW()
 		top[5][E_BINTREE_INPUT_POINTER] = INVALID_PLAYER_ID;
 		top[5][E_BINTREE_INPUT_VALUE] = 0;
 	}
-	
+
 	Bintree_Sort(top, 6);
 
 	mScorer1 = top[5][E_BINTREE_INPUT_POINTER];
