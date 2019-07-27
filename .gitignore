@@ -9,5 +9,4 @@ plugins/
 scriptfiles/
 libmysql.dll
 mysql_log.txt
-pawn/
 .DS_Store
